@@ -1,5 +1,4 @@
 #![allow(clippy::redundant_field_names)]
-use crate::player::Player;
 use crate::TILE_SIZE;
 use bevy::prelude::*;
 
