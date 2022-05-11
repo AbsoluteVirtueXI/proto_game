@@ -1,6 +1,6 @@
 use bevy::prelude::*;
 
-use crate::ascii::{self, spawn_ascii_sprite, AsciiSheet};
+use crate::ascii::{spawn_ascii_sprite, AsciiSheet};
 use crate::TILE_SIZE;
 use std::io::BufRead;
 use std::{fs::File, io::BufReader};
