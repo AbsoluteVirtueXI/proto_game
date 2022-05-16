@@ -10,13 +10,9 @@ use proto_game::TileMapPlugin;
 use proto_game::{BACKGROUND_COLOR, RESOLUTION};
 
 fn main() {
-    let height = 800.0;
-
     App::new()
         .insert_resource(ClearColor(BACKGROUND_COLOR))
         .insert_resource(WindowDescriptor {
-            width: height * RESOLUTION,
-            height: height,
             title: "Game Prototype".to_owned(),
             resizable: false,
             ..Default::default()
