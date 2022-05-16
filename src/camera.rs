@@ -10,11 +10,14 @@ impl Plugin for CameraPlugin {
 }
 
 fn spawn_camera(mut commands: Commands) {
-    let mut camera = OrthographicCameraBundle::new_2d();
-    camera.orthographic_projection.top = 1.0;
-    camera.orthographic_projection.bottom = -1.0;
-    camera.orthographic_projection.right = 1.0 * RESOLUTION;
-    camera.orthographic_projection.left = -1.0 * RESOLUTION;
-    camera.orthographic_projection.scaling_mode = ScalingMode::None;
-    commands.spawn_bundle(camera);
+    commands.spawn_bundle(OrthographicCameraBundle::new_2d());
+
+    //TODO: Maybe usefull later, else just remove.
+    //let mut camera = OrthographicCameraBundle::new_2d();
+    //camera.orthographic_projection.top = 50.0;
+    //camera.orthographic_projection.bottom = -50.0;
+    //camera.orthographic_projection.right = 50.0; //* RESOLUTION;
+    //camera.orthographic_projection.left = -50.0; //* RESOLUTION;
+    //camera.orthographic_projection.scaling_mode = ScalingMode::None;
+    //commands.spawn_bundle(camera);
 }
