@@ -1,5 +1,4 @@
-use crate::RESOLUTION;
-use bevy::{prelude::*, render::camera::ScalingMode};
+use bevy::prelude::*;
 
 pub struct CameraPlugin;
 
