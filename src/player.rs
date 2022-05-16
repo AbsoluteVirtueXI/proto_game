@@ -111,7 +111,7 @@ fn wall_collision_check(
     for wall_transform in wall_query.iter() {
         let collision = collide_aabb::collide(
             target_player_pos,
-            Vec2::splat(TILE_SIZE * 0.9), // WTF change this ugliness
+            Vec2::splat(TILE_SIZE * 0.9), //TODO: WTF change this ugliness
             wall_transform.translation,
             Vec2::splat(TILE_SIZE * 1.0),
         );
